@@ -1,4 +1,4 @@
-#Dan
+#CrimsoN
 #Casino program
 
 import random
@@ -8,7 +8,6 @@ import time
 
 
 print("Welcome to the Casino")
-
 
 
 
@@ -52,8 +51,12 @@ def roulette():
     user69=input("Pick either: black (40% chancec), red (40% chance) or green (20% chance): "+"\n").lower()
     roulette1=random.choice(["red","red","red","red","black","black","black","black","green","green"])#picks from the list its presented with
     print("It landed on", roulette1)
-    if user69==roulette1:
+    if user69=="red" and roulette1=="red":
         print("Congrats you got it"+"\n")#\n is new line
+    elif user69=="green" and roulette1=="green":
+        print("Congrats you got it"+"\n")
+    elif user69=="black" and roulette1=="black":
+        print("Congrats you got it"+"\n")
     else:
         print("RIP you guessed wrong"+"\n")
     rouletteQ()#calls rouletteQ 
